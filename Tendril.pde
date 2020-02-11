@@ -22,7 +22,13 @@ class Tendril
     int startX = myX;
     int startY = myY;
 
-    stroke(5, 223, 227);
+    if(myNumSegments >= 100){
+      stroke(5, 223, 227);
+    }else if(myNumSegments >= 30){
+      stroke(3, 44, 252);
+    }else{
+      stroke(148, 0, 189);
+    }
 
     for(int i = 0; i < myNumSegments; i++){
 
@@ -35,6 +41,9 @@ class Tendril
       
       startX = endX;
       startY = endY;
+    }
+    if(myNumSegments > 10){
+      Cluster newC = new Cluster(myNumSegments / 3, startX, startY);
     }
   }
 }
