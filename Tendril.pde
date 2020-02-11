@@ -19,6 +19,22 @@ class Tendril
   }
   public void show()
   {
-    //your code here
+    int startX = myX;
+    int startY = myY;
+
+    stroke(5, 223, 227);
+
+    for(int i = 0; i < myNumSegments; i++){
+
+      myAngle += Math.random()*0.4 - 0.2;
+
+      int endX = startX + (int)(SEG_LENGTH*Math.cos(myAngle));
+      int endY = startY + (int)(SEG_LENGTH*Math.sin(myAngle));
+
+      line(startX, startY, endX, endY);
+      
+      startX = endX;
+      startY = endY;
+    }
   }
 }
