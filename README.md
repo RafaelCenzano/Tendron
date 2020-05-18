@@ -1,6 +1,8 @@
 Tendron
 ==================
 
+[See it in action @ https://rafaelcenzano.com/apjava/starfield](https://rafaelcenzano.com/apjava/tendron)
+
 In this lab, you will use recursion to generate a tendron. A tendron has a cluster of 7 tendrils. At the end of each tendril is a cluster of 7 smaller tendrils. This pattern of clusters of tendrils repeats until the tendrils reach a minimum tendril length. You can think of this as a slightly more complex [Fractal tree](https://github.com/APCSLowell/FractalTree#fractal-tree). Instead of 2 branches in a v shape, there are 7 tendrils that radiate in all directions. Instead of straight branches, the tendrils wiggle randomly left and right as they radiate outward.
 
 Your code will draw the Tendron recursively, modifying the structure as the elements get smaller, going through smaller tendrils and clusters. Every time the `draw()` function runs, it generates a new and different Tendron since growth occurs randomly.   
@@ -45,6 +47,6 @@ The instructions above are only a suggestion. Have fun and be creative. Your Ten
 
 Samples of Student Work
 -----------------------
-None yet!   
+[Rafael](https://rafaelcenzano.com/apjava/tendron)
 
 *Note: this assignment was adapted from [Roger Frank's APCS assignment](https://web.archive.org/web/20100118105220/http://rfrank.net:80/cslabs-final/1640-tendron/1640.html)*
